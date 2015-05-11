@@ -11,8 +11,17 @@ var users = require('./routes/users');
 
 var app = express();
 
+var hbs = exphbs.create({
+    extname: '.hbs',
+    defaultLayout: 'main',
+    helpers: {
+        //foo: function () { return 'FOO!'; },
+        //bar: function () { return 'BAR!'; }
+    }
+});
+
 // view engine setup
-app.engine('.hbs', exphbs({extname: '.hbs', defaultLayout: 'main'}));
+app.engine('.hbs', hbs.engine);
 app.set('view engine', '.hbs');
 
 // uncomment after placing your favicon in /public

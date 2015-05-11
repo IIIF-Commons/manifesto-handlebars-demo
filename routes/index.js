@@ -8,11 +8,11 @@ router.get('/', function(req, res, next) {
 
     var text = manifesto.escape("test & test");
     res.render('index', {
-        text: text,
+        text: text
         // Override `foo` helper only for this rendering.
-        helpers: {
-            foo: function () { return 'foo.'; }
-        }
+        //helpers: {
+        //    foo: function () { return 'foo.'; }
+        //}
     });
 });
 
