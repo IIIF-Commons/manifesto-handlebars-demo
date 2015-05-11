@@ -1,26 +1,18 @@
 {
-  "name": "manifesto-site",
-  "version": "0.1.0",
-  "description": "",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node app.js"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/edsilv/manifesto-site.git"
-  },
-  "main": "server.js",
-  "author": "Edward Silverton <e.silverton@gmail.com> (http://edsilv.com)",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/edsilv/manifesto-site/issues"
-  },
-  "homepage": "https://github.com/edsilv/manifesto-site",
-  "devDependencies": {
-    "express": "^4.12.3",
-    "gulp": "^3.8.11",
-    "gulp-live-server": "0.0.14",
-    "manifesto": "git://github.com/edsilv/manifesto.git"
-  }
+    "name": "node-express-app",
+    "version": "0.0.0",
+    "private": true,
+    "scripts": {
+        "start": "node ./bin/www"
+    },
+    "dependencies": {
+        "body-parser": "~1.12.0",
+        "cookie-parser": "~1.3.4",
+        "debug": "~2.1.1",
+        "express": "~4.12.2",
+        "hbs": "~2.9.0",
+        "morgan": "~1.5.1",
+        "serve-favicon": "~2.2.0",
+        "manifesto": "git://github.com/edsilv/manifesto.git"
+    }
 }
