@@ -15,7 +15,7 @@ var hbs = exphbs.create({
     extname: '.hbs',
     defaultLayout: 'main',
     helpers: {
-        //foo: function () { return 'FOO!'; },
+        //foo: function () { return 'FOO!'; }
         //bar: function () { return 'BAR!'; }
     }
 });
