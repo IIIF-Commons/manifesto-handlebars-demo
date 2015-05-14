@@ -4,7 +4,7 @@ var manifesto = require('manifesto');
 
 router.get('/', function(req, res, next) {
 
-    var title = manifesto.sayHello("from node");
+    var title = manifesto.sayHello("from server");
 
     res.render('index', {
         title: title,
