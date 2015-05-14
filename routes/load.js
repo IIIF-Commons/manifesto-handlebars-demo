@@ -6,12 +6,12 @@ router.get('/', function(req, res, next) {
 
     var title = manifesto.sayHello("from node");
 
-    res.render('index', {
-        title: title,
-        // Override `foo` helper only for this rendering.
-        helpers: {
-            //foo: function () { return 'foo.'; }
-        }
+    //http://wellcomelibrary.org/iiif/b18035723/manifest
+    manifesto.load("/data/manifest.json", function(manifest) {
+        res.render('load', {
+            title: title,
+            manifest: manifest.label
+        });
     });
 
 });

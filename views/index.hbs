@@ -1,1 +1,23 @@
-<h1>{{text}}</h1>
+<h1>{{title}}</h1>
+
+<div>
+    <input id="manifest" type="text" placeholder="Manifest Uri" value="/data/manifest.json" />
+    <button id="load-btn">Load</button>
+    <br><br>
+</div>
+
+<div>
+    <textarea id="manifest-txt" rows="50" cols="100"></textarea>
+</div>
+
+<script>
+    $(function() {
+        $('#load-btn').on('click', function(e) {
+            e.preventDefault();
+            var manifestUri = $('#manifest').val();
+            manifesto.load(manifestUri, function(manifest){
+                $('#manifest-txt').text(manifest);
+            });
+        });
+    });
+</script>
