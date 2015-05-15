@@ -15,4 +15,4 @@ and "hello from client" is being written using the bower component (see `views/l
 
 Clicking the "load" button will use the bower version (`manifesto.client.js`) to load `/data/manifest.json`.
 
-Browsing to `/load` uses the node version to load `/data/manifest.json` (currently not working)
+Browsing to `/load` uses the node version to load `/data/manifest.json`
