@@ -2,7 +2,8 @@
 
 <div>
     <input id="manifest" type="text" placeholder="Manifest Uri" value="http://localhost:3000/data/manifest.json" />
-    <button id="load-btn">Load</button>
+    <button id="load-client-btn">Load (Client)</button>
+    <button id="load-server-btn">Load (Server)</button>
     <br><br>
 </div>
 
@@ -12,12 +13,18 @@
 
 <script>
     $(function() {
-        $('#load-btn').on('click', function(e) {
+        $('#load-client-btn').on('click', function(e) {
             e.preventDefault();
             var manifestUri = $('#manifest').val();
             manifesto.load(manifestUri, function(manifest){
                 $('#manifest-txt').text(manifest);
             });
+        });
+
+        $('#load-server-btn').on('click', function(e) {
+            e.preventDefault();
+            var manifestUri = $('#manifest').val();
+            window.location.href = "/load/" + encodeURIComponent(manifestUri);
         });
     });
 </script>
