@@ -7,10 +7,13 @@ router.get('/', function(req, res, next) {
     var title = manifesto.sayHello("from node");
 
     //http://wellcomelibrary.org/iiif/b18035723/manifest
-    manifesto.load("/data/manifest.json", function(manifest) {
+    manifesto.load("http://localhost:3000/data/manifest.json", function(manifest) {
+
+        var m = JSON.parse(manifest);
+
         res.render('load', {
             title: title,
-            manifest: manifest.label
+            manifest: m.label
         });
     });
 
