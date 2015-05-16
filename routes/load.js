@@ -10,11 +10,11 @@ router.get('/:url', function(req, res, next) {
 
     manifesto.load(url, function(manifest) {
 
-        var m = JSON.parse(manifest);
-
-        res.render('load', {
-            title: title,
-            manifest: m.label
+        manifesto.parse(manifest, function(parsed) {
+            res.render('load', {
+                title: title,
+                manifest: parsed.label
+            });
         });
     });
 
