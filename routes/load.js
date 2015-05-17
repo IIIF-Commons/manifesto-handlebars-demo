@@ -4,7 +4,7 @@ var manifesto = require('manifesto');
 
 router.get('/:url', function(req, res, next) {
 
-    var title = manifesto.sayHello("from node");
+    //var title = manifesto.sayHello("from node");
 
     var url = decodeURIComponent(req.params.url);
 
@@ -12,8 +12,8 @@ router.get('/:url', function(req, res, next) {
 
         manifesto.parse(manifest, function(parsed) {
             res.render('load', {
-                title: title,
-                manifest: parsed.label
+                //title: title,
+                manifest: JSON.stringify(parsed)
             });
         });
     });

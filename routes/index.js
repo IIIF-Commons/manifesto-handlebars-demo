@@ -4,10 +4,10 @@ var manifesto = require('manifesto');
 
 router.get('/', function(req, res, next) {
 
-    var title = manifesto.sayHello("from server");
+    //var title = manifesto.sayHello("from server");
 
     res.render('index', {
-        title: title,
+        //title: title,
         // Override `foo` helper only for this rendering.
         helpers: {
             //foo: function () { return 'foo.'; }
