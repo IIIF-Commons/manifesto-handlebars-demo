@@ -7,8 +7,8 @@
     <br><br>
 </div>
 
-<div>
-    <textarea id="manifest-txt" rows="50" cols="100"></textarea>
+<div id="manifest-txt">
+
 </div>
 
 <script>
@@ -17,7 +17,8 @@
             e.preventDefault();
             var manifestUri = $('#manifest').val();
             manifesto.load(manifestUri, function(manifest){
-                $('#manifest-txt').text(manifest);
+                manifest = manifesto.parse(manifest);
+                $('#manifest-txt').append(manifest.label);
             });
         });
 
