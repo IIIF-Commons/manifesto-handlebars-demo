@@ -6,9 +6,7 @@ This demonstrates using https://github.com/edsilv/manifesto as both a node modul
 
     npm install
     bower install
-    npm start
-
-browse to `http://localhost:3000`
+    gulp serve
 
 Clicking the "Load (Client)" button will use the bower version (`manifesto.client.js`) to load the specified manifest.
 

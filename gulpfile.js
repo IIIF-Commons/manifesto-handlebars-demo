@@ -2,7 +2,8 @@ var argv = require('yargs').argv,
     bump = require('gulp-bump'),
     Config = require('./gulpfile.config'),
     exec = require('child_process').exec,
-    gulp = require('gulp');
+    gulp = require('gulp'),
+    open = require('open');
 
 var config = new Config();
 
@@ -25,5 +26,11 @@ gulp.task('bump:minor', function(cb){
 gulp.task('bump:major', function(cb){
     exec('gulp bump --type major', function (err, stdout, stderr) {
         cb();
+    });
+});
+
+gulp.task('serve', function(){
+    exec('npm start', function (err, stdout, stderr) {
+        open('http://localhost:' + config.port);
     });
 });
