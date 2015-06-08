@@ -16,7 +16,7 @@
     "tests"
   ],
   "dependencies": {
-    "manifesto": "edsilv/manifesto",
+    "manifesto": "edsilv/manifesto#dev",
     "jquery": "~2.1.4"
   }
 }
