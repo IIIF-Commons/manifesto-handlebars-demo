@@ -14,7 +14,7 @@ router.get('/:url', function(req, res, next) {
 
         res.render('load', {
             //title: title,
-            manifest: manifest.label
+            manifest: manifest.getLabel()
         });
 
     });

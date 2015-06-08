@@ -19,7 +19,7 @@
             var manifestUri = $('#manifest').val();
             manifesto.load(manifestUri, function(manifest){
                 manifest = manifesto.parse(manifest);
-                $('#manifest-txt').append(manifest.label);
+                $('#manifest-txt').append(manifest.getLabel());
             });
         });
 
