@@ -1,22 +1,22 @@
 {
-  "name": "manifesto-site",
-  "version": "0.0.1",
-  "homepage": "https://github.com/edsilv/manifesto-site",
-  "authors": [
-    "edsilv <e.silverton@gmail.com>"
-  ],
-  "description": "Test manifesto",
-  "main": "app.js",
-  "license": "MIT",
-  "ignore": [
-    "**/.*",
-    "node_modules",
-    "bower_components",
-    "test",
-    "tests"
-  ],
-  "dependencies": {
-    "manifesto": "edsilv/manifesto#dev",
-    "jquery": "~2.1.4"
-  }
+    "name": "manifesto-site",
+    "version": "0.0.1",
+    "homepage": "https://github.com/edsilv/manifesto-site",
+    "authors": [
+        "edsilv <e.silverton@gmail.com>"
+    ],
+    "description": "Test manifesto",
+    "main": "app.js",
+    "license": "MIT",
+    "ignore": [
+        "**/.*",
+        "node_modules",
+        "bower_components",
+        "test",
+        "tests"
+    ],
+    "dependencies": {
+        "manifesto": "edsilv/manifesto#dev",
+        "jquery": "~2.1.4"
+    }
 }
