@@ -1,4 +1,4 @@
-# manifesto-site
+# manifesto-handlebars-demo
 
 This demonstrates using https://github.com/edsilv/manifesto as both a node module and bower component.
 
