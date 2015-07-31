@@ -4,13 +4,11 @@ var manifesto = require('manifesto');
 
 router.get('/:url', function(req, res, next) {
 
-    //var title = manifesto.sayHello("from node");
-
     var url = decodeURIComponent(req.params.url);
 
     manifesto.load(url, function(manifest) {
 
-        manifest = manifesto.parse(manifest);
+        manifest = manifesto.create(manifest);
 
         res.render('load', {
             //title: title,
