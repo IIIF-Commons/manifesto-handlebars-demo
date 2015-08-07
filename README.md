@@ -8,6 +8,6 @@ This demonstrates using https://github.com/edsilv/manifesto as both a node modul
     bower install
     gulp serve
 
-Clicking the "Load (Client)" button will use the bower version (`manifesto.client.js`) to load the specified manifest.
+Clicking the "Load (Client)" button will use the bower version to load the specified manifest.
 
-Clicking the "Load (Server)" button will use the node version (`manifesto.js`) to load the specified manifest.
+Clicking the "Load (Server)" button will use the node version to load the specified manifest.
