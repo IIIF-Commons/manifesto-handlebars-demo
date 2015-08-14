@@ -16,7 +16,7 @@
         "tests"
     ],
     "dependencies": {
-        "manifesto": "~0.1.6",
+        "manifesto": "~0.1.13",
         "jquery": "~2.1.4"
     }
 }

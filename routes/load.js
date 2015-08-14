@@ -6,13 +6,12 @@ router.get('/:url', function(req, res, next) {
 
     var url = decodeURIComponent(req.params.url);
 
-    manifesto.load(url, function(manifest) {
+    manifesto.loadManifest(url).then(function(manifest) {
 
         manifest = manifesto.create(manifest);
 
         res.render('load', {
-            //title: title,
-            manifest: manifest.getLabel()
+            label: manifest.getLabel()
         });
 
     });
