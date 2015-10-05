@@ -12,7 +12,7 @@
     "express": "~4.12.2",
     "express-handlebars": "^2.0.1",
     "hbs": "~2.9.0",
-    "manifesto": "git://github.com/edsilv/manifesto.git#v0.1.13",
+    "manifesto": "git://github.com/edsilv/manifesto.git#v0.1.16",
     "morgan": "~1.5.1",
     "serve-favicon": "~2.2.0"
   },
