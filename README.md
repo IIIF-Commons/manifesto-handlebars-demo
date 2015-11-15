@@ -1,6 +1,6 @@
 # manifesto-handlebars-demo
 
-This demonstrates using https://github.com/edsilv/manifesto as both a node module and bower component.
+This demonstrates using https://github.com/universalviewer/manifesto as both a node module and bower component.
 
 ##Setup
 
