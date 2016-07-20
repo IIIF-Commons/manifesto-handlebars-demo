@@ -8,7 +8,7 @@ var Config = require('./gulpfile.config'),
     tasks = requireDir('./tasks');
 
 gulp.task('serve', function(){
-    exec('npm start', function (err, stdout, stderr) {
+    exec('npm start &', function (err, stdout, stderr) {
         open('http://localhost:' + config.port);
     });
 });
